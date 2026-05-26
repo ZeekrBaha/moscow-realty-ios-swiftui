@@ -1,6 +1,6 @@
 import Foundation
 
-struct ChatThread: Identifiable, Codable {
+struct ChatThread: Identifiable, Codable, Equatable {
     let id:              UUID
     var propertyId:      UUID
     var propertyTitle:   String

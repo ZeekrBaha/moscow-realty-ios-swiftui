@@ -10,7 +10,8 @@ struct SearchFilter: Equatable {
     var district:     String?
 
     var isEmpty: Bool {
-        rooms.isEmpty && priceMin == nil && priceMax == nil
+        propertyType == .apartment && listingType == .buy
+        && rooms.isEmpty && priceMin == nil && priceMax == nil
         && areaMin == nil && areaMax == nil
         && metro == nil && district == nil
     }
