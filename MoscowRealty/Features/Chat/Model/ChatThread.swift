@@ -1,6 +1,6 @@
 import Foundation
 
-struct ChatThread: Identifiable, Codable, Equatable {
+struct ChatThread: Identifiable, Codable, Equatable, Hashable {
     let id:              UUID
     var propertyId:      UUID
     var propertyTitle:   String
@@ -9,4 +9,6 @@ struct ChatThread: Identifiable, Codable, Equatable {
     var lastMessageDate: Date
     var unreadCount:     Int
     var messages:        [ChatMessage]
+
+    func hash(into hasher: inout Hasher) { hasher.combine(id) }
 }
