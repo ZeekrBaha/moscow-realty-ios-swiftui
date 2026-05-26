@@ -1,18 +1,32 @@
 # МоскваРиелти (Moscow Realty)
 
-A Russian-language real estate iOS app built in SwiftUI for iOS 17+, following a Figma design spec. Supports buyer browsing, property search, favorites, and agent listing management.
+A Russian-language real estate iOS app built in SwiftUI for iOS 17+, following a Figma design spec. Supports buyer browsing, property search, favorites, agent listing management, and in-app chat.
 
 ---
 
 ## Screenshots
 
-| Home | Search | Map |
-|------|--------|-----|
-| ![Home](docs/screenshots/01_home.png) | ![Search](docs/screenshots/02_search.png) | — |
+### Onboarding
 
-| Post Gate | Chat | Profile |
-|-----------|------|---------|
-| ![Post](docs/screenshots/03_post_gate.png) | ![Chat](docs/screenshots/04_chat.png) | ![Profile](docs/screenshots/05_profile.png) |
+| Slide 1 | Slide 2 | Slide 3 |
+|---------|---------|---------|
+| ![Onboarding 1](docs/screenshots/00_onboarding_1.png) | ![Onboarding 2](docs/screenshots/00_onboarding_2.png) | ![Onboarding 3](docs/screenshots/00_onboarding_3.png) |
+
+### Main App
+
+| Home | Search | Property Detail |
+|------|--------|----------------|
+| ![Home](docs/screenshots/01_home.png) | ![Search](docs/screenshots/02_search.png) | ![Detail](docs/screenshots/07_property_detail.png) |
+
+| Post Gate | Chat | Profile (logged out) |
+|-----------|------|----------------------|
+| ![Post](docs/screenshots/03_post_gate.png) | ![Chat](docs/screenshots/04_chat.png) | ![Profile](docs/screenshots/06_profile_loggedout.png) |
+
+### Authenticated Views
+
+| Profile (Agent) | Agent Dashboard | Add Listing |
+|-----------------|-----------------|-------------|
+| ![Profile Agent](docs/screenshots/08_profile_agent.png) | ![Agent Dashboard](docs/screenshots/09_agent_dashboard.png) | ![Add Listing](docs/screenshots/10_add_listing.png) |
 
 ---
 
@@ -25,7 +39,7 @@ A Russian-language real estate iOS app built in SwiftUI for iOS 17+, following a
 | State | `@Observable` / `@MainActor` ViewModels |
 | Navigation | `NavigationPath`-based coordinators |
 | Maps | MapKit (iOS 17 `Map` API) |
-| Persistence | `UserDefaults` (favorites) |
+| Persistence | `UserDefaults` (favorites + onboarding flag) |
 | Services | Protocol-backed mock services (no backend) |
 | Project | XcodeGen (`project.yml`) |
 | Tests | XCTest (unit) |
@@ -41,6 +55,9 @@ A Russian-language real estate iOS app built in SwiftUI for iOS 17+, following a
 │                   App                        │
 │         MoscowRealtyApp (entry point)        │
 │               ↓                              │
+│   hasSeenOnboarding? ──no──▶ OnboardingView  │
+│        │ yes                                 │
+│        ▼                                     │
 │          AppCoordinator                      │
 │   (DI root: all 4 service instances)         │
 └──────────────────┬──────────────────────────┘
@@ -86,24 +103,6 @@ View
     NavigationStack(path: Bindable(coordinator).path) { ... }
 ```
 
-### Auth gate flow
-
-```
-App launch
-    │
-    ├─ authService.currentUser != nil ──▶ RootTabView (main app)
-    │
-    └─ nil ──▶ AuthFlowView
-                    │
-                    ├─ LoginView
-                    ├─ RegisterBuyerView
-                    └─ RegisterAgentView
-                              │
-                        MockAuthService (seed accounts)
-                              │
-                        onAuthenticated ──▶ RootTabView
-```
-
 ### Seed accounts (mock)
 
 | Role | Email | Password |
@@ -118,9 +117,9 @@ App launch
 ```
 MoscowRealty/
 ├── App/
-│   ├── MoscowRealtyApp.swift        ← @main, creates AppCoordinator
+│   ├── MoscowRealtyApp.swift        ← @main, onboarding gate
 │   ├── RootTabView.swift            ← 5-tab shell
-│   ├── AuthFlowView.swift           ← auth gate
+│   ├── AuthFlowView.swift           ← auth sheet (login/register)
 │   └── PostAuthGateView.swift       ← agent-only post gate
 ├── Coordinators/
 │   ├── AppCoordinator.swift         ← DI root, holds all services
@@ -134,14 +133,16 @@ MoscowRealty/
 │   ├── ViewState.swift              ← ViewState<T> generic enum
 │   └── Environment/AppEnvironment.swift  ← EnvironmentKey DI
 ├── Features/
-│   ├── Home/        View + ViewModel
-│   ├── Catalog/     View (CatalogMapView)
+│   ├── Onboarding/  OnboardingView (3-slide, UserDefaults gate)
+│   ├── Home/        View + ViewModel (filter chips, 2-column grid)
+│   ├── Catalog/     CatalogMapView (MapKit annotations)
 │   ├── Search/      View + Model (SearchFilter, SearchFilterSheet)
 │   ├── PropertyDetail/ View
 │   ├── Chat/        View + Model (ChatThread, ChatMessage)
 │   ├── Auth/        View + Model (AppUser, AuthError)
-│   ├── Agent/       View (AddListingView)
-│   └── Profile/     View
+│   ├── Agent/       AddListingView + AgentDashboardView
+│   ├── Favorites/   FavoritesView
+│   └── Profile/     ProfileView + ProfileViewModel
 ├── Services/
 │   ├── PropertyServiceProtocol.swift
 │   ├── AuthServiceProtocol.swift
@@ -158,8 +159,25 @@ MoscowRealtyTests/
 ├── Services/
 │   └── FavoritesServiceTests.swift
 └── ViewModels/
-    └── HomeViewModelTests.swift
+    ├── HomeViewModelTests.swift
+    ├── AgentDashboardViewModelTests.swift
+    └── AddListingViewModelTests.swift
 ```
+
+---
+
+## Features
+
+- **Onboarding** — 3-slide intro on first launch (UserDefaults flag)
+- **Home** — Figma-matched layout: 4 filter chips (type, property, rooms, price), metro search bar, "Показать" button, 2-column grid split by Аренда / Покупка
+- **Search** — full-text + filter by price, area, metro, rooms
+- **Map** — MapKit property pins with tap-to-preview card
+- **Property Detail** — photo gallery, specs grid, map, contact agent button
+- **Chat** — real-time-style message threads with mock data
+- **Agent Dashboard** — swipe-to-delete/edit, empty state
+- **Add Listing** — 5-step form (type → location → details → photos → confirm)
+- **Profile** — logged-out gate + logged-in view with favorites, agent section, logout
+- **Favorites** — heart toggle persisted to UserDefaults
 
 ---
 
@@ -180,7 +198,7 @@ xcodegen generate          # regenerates MoscowRealty.xcodeproj
 open MoscowRealty.xcodeproj
 ```
 
-Select an iPhone 17 Pro simulator and press **Run**.
+Select an iPhone 16 Pro simulator and press **Run**.
 
 ---
 
@@ -194,4 +212,4 @@ xcodebuild test \
   2>&1 | grep -E "(Test Suite|passed|failed|error)"
 ```
 
-All 18 tests pass (models, services, view models).
+All tests pass (models, services, view models).
