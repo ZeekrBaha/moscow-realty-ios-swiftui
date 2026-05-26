@@ -32,6 +32,11 @@ struct RootTabView: View {
                 .tag(4)
         }
         .tint(.primary)
+        // Inject AppCoordinator's service instances so all views share the same singletons
+        .environment(\.authService, app.authService)
+        .environment(\.propertyService, app.propertyService)
+        .environment(\.chatService, app.chatService)
+        .environment(\.favoritesService, app.favoritesService)
     }
 
     // MARK: - Tabs

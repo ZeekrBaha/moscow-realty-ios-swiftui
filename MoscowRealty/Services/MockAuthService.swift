@@ -1,5 +1,7 @@
 import Foundation
+import Observation
 
+@Observable
 final class MockAuthService: AuthServiceProtocol {
 
     private(set) var currentUser: AppUser?

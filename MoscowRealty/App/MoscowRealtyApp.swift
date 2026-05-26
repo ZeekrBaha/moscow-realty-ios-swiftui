@@ -3,11 +3,18 @@ import SwiftUI
 @main
 struct MoscowRealtyApp: App {
     @State private var appCoordinator = AppCoordinator()
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
 
     var body: some Scene {
         WindowGroup {
-            RootTabView()
-                .environment(appCoordinator)
+            if hasSeenOnboarding {
+                RootTabView()
+                    .environment(appCoordinator)
+            } else {
+                OnboardingView {
+                    hasSeenOnboarding = true
+                }
+            }
         }
     }
 }

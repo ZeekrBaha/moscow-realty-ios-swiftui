@@ -68,6 +68,7 @@
 		CB0724D86EC1A20AD2560DAB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095FF79DA33653EEE6B0C6A /* MainCoordinator.swift */; };
 		CD303136D61153CF97FA82BB /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD3A50569001D1544034CC /* PropertyDetailView.swift */; };
 		D7D477A229D58E0DA1F24F74 /* AuthFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F182B104996A550DB71CAA /* AuthFlowView.swift */; };
+		DC6EE96FF583238C35592481 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139BE702A75314678F77A67 /* OnboardingView.swift */; };
 		DD73FD9B525312FBBA728950 /* PostAuthGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5D238C4499372CCEB4640 /* PostAuthGateView.swift */; };
 		DEB81590EF63725AF6F9A6D7 /* PostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02AD3FA7E0AE827A992444 /* PostCoordinator.swift */; };
 		E0721AAACDD5D1A25C387ED1 /* ChatServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73646197CE12E2A4DCCA060E /* ChatServiceProtocol.swift */; };
@@ -132,6 +133,7 @@
 		7D402E0DF4D14B068192A4EC /* AgentDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDashboardView.swift; sourceTree = "<group>"; };
 		7DEE6763494D699490B0691C /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
 		7E1DDCEBF85A592CCC422511 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8139BE702A75314678F77A67 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		82D26C744D5927F213AE01B9 /* CatalogViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModelTests.swift; sourceTree = "<group>"; };
 		880EBF7EDA560849C7A17E7E /* FavoritesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceProtocol.swift; sourceTree = "<group>"; };
 		8E83FD5352C30E7F33408093 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				71C3F184EFA7F2AE82058FDC /* Chat */,
 				054F78329EA64F8F957C3AAE /* Favorites */,
 				0C24CBD230D5F7B6A1A6F057 /* Home */,
+				745DF5ECE831208D5CA6F164 /* Onboarding */,
 				6FF23E037063557DC6C4E6A1 /* Profile */,
 				316AED744902F9BF540F20A9 /* PropertyDetail */,
 				FBAB14E4DD207313E47DFD7A /* Search */,
@@ -430,6 +433,14 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		745DF5ECE831208D5CA6F164 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D81372B78A45397A0E2BF80D /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		8BC1CA1C369CA342D970C457 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +534,14 @@
 				6B6BEE363E2ACAEFFACF7582 /* RootTabView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		D81372B78A45397A0E2BF80D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8139BE702A75314678F77A67 /* OnboardingView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DD24FFC03FFA0585EED1915F /* ViewModel */ = {
@@ -718,6 +737,7 @@
 				669B294A73DD5DEAB8FE5B62 /* MockChatService.swift in Sources */,
 				BA85D43222E1E11A1707D4EB /* MockPropertyService.swift in Sources */,
 				44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */,
+				DC6EE96FF583238C35592481 /* OnboardingView.swift in Sources */,
 				AA1C8489E12A86B182C27D7A /* PhotoGalleryView.swift in Sources */,
 				DD73FD9B525312FBBA728950 /* PostAuthGateView.swift in Sources */,
 				DEB81590EF63725AF6F9A6D7 /* PostCoordinator.swift in Sources */,
