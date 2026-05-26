@@ -32,3 +32,6 @@ targets:
       - target: MoscowRealty
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.baha.moscowrealtyTests
+      INFOPLIST_FILE: MoscowRealtyTests/Info.plist
+    info:
+      path: MoscowRealtyTests/Info.plist

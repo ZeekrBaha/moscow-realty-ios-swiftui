@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5A94DAC2232C5CC311DEB2 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6B659F8A73BE46B711051 /* Property.swift */; };
 		31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */; };
+		42CC2C3C2A17076AF8038DAF /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F598DE68E0A970C57CDA4E /* ViewState.swift */; };
 		44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */; };
+		8BCD5F9C93A8CB44B71236A0 /* PropertyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8370A64B6B607E98C319AA /* PropertyModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +25,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20F598DE68E0A970C57CDA4E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		3F8370A64B6B607E98C319AA /* PropertyModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModelTests.swift; sourceTree = "<group>"; };
 		40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowRealtyApp.swift; sourceTree = "<group>"; };
+		5D5647CAB658AECABE6BBAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		91D6B659F8A73BE46B711051 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		97EB1FB720AD5C0681CF0C8A /* MoscowRealty.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoscowRealty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A755DC64BB56517834E38D /* MoscowRealtyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoscowRealtyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BB14D91B8EF479F74FBDB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -35,14 +42,33 @@
 			children = (
 				C9BB14D91B8EF479F74FBDB1 /* Info.plist */,
 				D74A77E26E13A2FC8A9C5AC7 /* App */,
+				E1EB25CBB9E195DCC7D29D39 /* Core */,
 			);
 			path = MoscowRealty;
+			sourceTree = "<group>";
+		};
+		53F13DE591039BBBB58B5DEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91D6B659F8A73BE46B711051 /* Property.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E5791485BB325EE312DB6D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3F8370A64B6B607E98C319AA /* PropertyModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		69E2204D51B00564B6EEB6D7 /* MoscowRealtyTests */ = {
 			isa = PBXGroup;
 			children = (
+				5D5647CAB658AECABE6BBAD1 /* Info.plist */,
 				E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */,
+				5E5791485BB325EE312DB6D9 /* ViewModels */,
 			);
 			path = MoscowRealtyTests;
 			sourceTree = "<group>";
@@ -73,81 +99,83 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		"TEMP_30F97007-8F64-4DE0-9EED-7437375918E2" /* Search */ = {
+		E1EB25CBB9E195DCC7D29D39 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		"TEMP_31B283E6-13BD-431D-A90E-C4C5410369DC" /* Catalog */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Catalog;
-			sourceTree = "<group>";
-		};
-		"TEMP_3AF20F8E-AF64-433E-862A-E7279879AF68" /* Core */ = {
-			isa = PBXGroup;
-			children = (
+				20F598DE68E0A970C57CDA4E /* ViewState.swift */,
+				53F13DE591039BBBB58B5DEC /* Models */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		"TEMP_5D015ABB-804A-426B-80BE-30B55283DEBF" /* Chat */ = {
+		"TEMP_0D767E10-4EA2-4F06-A695-C323832381FA" /* Chat */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		"TEMP_682D0982-0700-4443-906A-2BDCB11B7715" /* Features */ = {
+		"TEMP_2D9BA621-7247-49E3-B2C0-9622A4311E9D" /* Features */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		"TEMP_960E39DA-4D2A-41E0-B6EF-03A6869DAEAA" /* PropertyDetail */ = {
+		"TEMP_31E00D9A-586B-45E3-8B46-D74B9FD67F01" /* PropertyDetail */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = PropertyDetail;
 			sourceTree = "<group>";
 		};
-		"TEMP_BE15E53E-7C8B-44A0-804E-D32A7D40EC72" /* Favorites */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Favorites;
-			sourceTree = "<group>";
-		};
-		"TEMP_CA719CC2-BDE9-44A8-A475-2AC9858D7F53" /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		"TEMP_DF13FAEC-99F9-4CAF-B2B5-5BE2026EAC87" /* Agent */ = {
+		"TEMP_43C6034E-7A2B-4885-9AE8-BF79C0EDF8C1" /* Agent */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Agent;
 			sourceTree = "<group>";
 		};
-		"TEMP_E05CA71D-B35B-47E8-AB9D-7854C5864FCC" /* Auth */ = {
+		"TEMP_4BC74C22-197A-46A2-81F1-E8775B21791F" /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		"TEMP_F5AFCCFD-2746-4612-AD19-18C19D6FCF9E" /* Home */ = {
+		"TEMP_504043F9-3B51-4097-835E-2AC4A4C2E585" /* Home */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		"TEMP_549861DB-93DF-4D38-A74D-6020BDA20C9E" /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		"TEMP_88679113-CD20-4FAD-8C8E-8A22B80BC64E" /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		"TEMP_A0BE848D-2467-4BA9-93B3-F7A1DD10BCB9" /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		"TEMP_BAD0EDAA-AA7B-4077-85E3-5DA7C8345019" /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */,
+				2C5A94DAC2232C5CC311DEB2 /* Property.swift in Sources */,
+				42CC2C3C2A17076AF8038DAF /* ViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */,
+				8BCD5F9C93A8CB44B71236A0 /* PropertyModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoscowRealtyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoscowRealtyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
