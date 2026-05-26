@@ -12,6 +12,12 @@
 		42CC2C3C2A17076AF8038DAF /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F598DE68E0A970C57CDA4E /* ViewState.swift */; };
 		44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */; };
 		9AB416E01FB7AD040C718755 /* PropertyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC81185E1A91C62711AC4E9 /* PropertyModelTests.swift */; };
+		AA0001AA0001AA0001AA0001 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001BB0001BB0001BB0001 /* AppUser.swift */; };
+		AA0002AA0002AA0002AA0002 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0002BB0002BB0002BB0002 /* AuthError.swift */; };
+		AA0003AA0003AA0003AA0003 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0003BB0003BB0003BB0003 /* ChatMessage.swift */; };
+		AA0004AA0004AA0004AA0004 /* ChatThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0004BB0004BB0004BB0004 /* ChatThread.swift */; };
+		AA0005AA0005AA0005AA0005 /* SearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0005BB0005BB0005BB0005 /* SearchFilter.swift */; };
+		AA0006AA0006AA0006AA0006 /* AuthModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0006BB0006BB0006BB0006 /* AuthModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +36,12 @@
 		5D5647CAB658AECABE6BBAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		91D6B659F8A73BE46B711051 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		97EB1FB720AD5C0681CF0C8A /* MoscowRealty.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoscowRealty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0001BB0001BB0001BB0001 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		BB0002BB0002BB0002BB0002 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		BB0003BB0003BB0003BB0003 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		BB0004BB0004BB0004BB0004 /* ChatThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatThread.swift; sourceTree = "<group>"; };
+		BB0005BB0005BB0005BB0005 /* SearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilter.swift; sourceTree = "<group>"; };
+		BB0006BB0006BB0006BB0006 /* AuthModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModelTests.swift; sourceTree = "<group>"; };
 		C1A755DC64BB56517834E38D /* MoscowRealtyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoscowRealtyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BB14D91B8EF479F74FBDB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DDC81185E1A91C62711AC4E9 /* PropertyModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModelTests.swift; sourceTree = "<group>"; };
@@ -43,6 +55,7 @@
 				C9BB14D91B8EF479F74FBDB1 /* Info.plist */,
 				D74A77E26E13A2FC8A9C5AC7 /* App */,
 				E1EB25CBB9E195DCC7D29D39 /* Core */,
+				"TEMP_0D19067A-8DEE-4B2B-972D-8C9447EEA248" /* Features */,
 			);
 			path = MoscowRealty;
 			sourceTree = "<group>";
@@ -59,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				DDC81185E1A91C62711AC4E9 /* PropertyModelTests.swift */,
+				BB0006BB0006BB0006BB0006 /* AuthModelTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +125,15 @@
 		"TEMP_0D19067A-8DEE-4B2B-972D-8C9447EEA248" /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				"TEMP_3E73D635-BC66-4DA7-9CB1-74FB1EA9EBBD" /* Auth */,
+				"TEMP_903FF72B-2397-4D1D-9F95-2CC286E55257" /* Chat */,
+				"TEMP_69576CF7-46E1-4575-ACED-500B1B888046" /* Search */,
+				"TEMP_408357FA-0E3C-43AE-BB09-3951D272AF38" /* Favorites */,
+				"TEMP_4C5F31FA-9524-4E7F-8980-E49FA0BF74C1" /* Profile */,
+				"TEMP_54329570-5FCA-4C69-974A-FF3FA65E85B2" /* Home */,
+				"TEMP_5B8D270D-1E2D-4D67-B40D-1DA71F0188A2" /* PropertyDetail */,
+				"TEMP_5BCD3E8B-99E5-40D1-94F4-808B2A590818" /* Catalog */,
+				"TEMP_F6F4918E-8E60-40E0-B694-958558F145E9" /* Agent */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -118,8 +141,18 @@
 		"TEMP_3E73D635-BC66-4DA7-9CB1-74FB1EA9EBBD" /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				CC0001CC0001CC0001CC0001 /* Model */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		CC0001CC0001CC0001CC0001 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0001BB0001BB0001BB0001 /* AppUser.swift */,
+				BB0002BB0002BB0002BB0002 /* AuthError.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		"TEMP_408357FA-0E3C-43AE-BB09-3951D272AF38" /* Favorites */ = {
@@ -160,15 +193,34 @@
 		"TEMP_69576CF7-46E1-4575-ACED-500B1B888046" /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				CC0003CC0003CC0003CC0003 /* Model */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		CC0003CC0003CC0003CC0003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0005BB0005BB0005BB0005 /* SearchFilter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		"TEMP_903FF72B-2397-4D1D-9F95-2CC286E55257" /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				CC0002CC0002CC0002CC0002 /* Model */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		CC0002CC0002CC0002CC0002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0003BB0003BB0003BB0003 /* ChatMessage.swift */,
+				BB0004BB0004BB0004BB0004 /* ChatThread.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		"TEMP_F6F4918E-8E60-40E0-B694-958558F145E9" /* Agent */ = {
@@ -255,6 +307,11 @@
 				44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */,
 				2C5A94DAC2232C5CC311DEB2 /* Property.swift in Sources */,
 				42CC2C3C2A17076AF8038DAF /* ViewState.swift in Sources */,
+				AA0001AA0001AA0001AA0001 /* AppUser.swift in Sources */,
+				AA0002AA0002AA0002AA0002 /* AuthError.swift in Sources */,
+				AA0003AA0003AA0003AA0003 /* ChatMessage.swift in Sources */,
+				AA0004AA0004AA0004AA0004 /* ChatThread.swift in Sources */,
+				AA0005AA0005AA0005AA0005 /* SearchFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +321,7 @@
 			files = (
 				31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */,
 				9AB416E01FB7AD040C718755 /* PropertyModelTests.swift in Sources */,
+				AA0006AA0006AA0006AA0006 /* AuthModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
