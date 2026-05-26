@@ -35,6 +35,7 @@ struct CatalogView: View {
 
     @ViewBuilder
     private func content(vm: CatalogViewModel) -> some View {
+        @Bindable var vm = vm
         VStack(spacing: 0) {
             HStack {
                 Spacer()

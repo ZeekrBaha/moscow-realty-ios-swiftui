@@ -35,6 +35,7 @@ final class CatalogViewModelTests: XCTestCase {
         await sut.load()
         guard case .loaded(let oneRoom) = sut.state else { XCTFail(); return }
         XCTAssertTrue(oneRoom.count <= allApartments.count)
+        XCTAssertFalse(oneRoom.isEmpty, "1-room filter should match at least one property in seed data")
         XCTAssertTrue(oneRoom.allSatisfy { $0.rooms == 1 })
     }
 }
