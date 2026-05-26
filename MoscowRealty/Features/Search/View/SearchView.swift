@@ -22,7 +22,8 @@ struct SearchView: View {
     }
 
     private func content(vm: SearchViewModel) -> some View {
-        VStack(spacing: 0) {
+        @Bindable var vm = vm
+        return VStack(spacing: 0) {
             searchBar(vm: vm)
             filterChips(vm: vm)
             results(vm: vm)
@@ -30,12 +31,10 @@ struct SearchView: View {
     }
 
     private func searchBar(vm: SearchViewModel) -> some View {
-        HStack {
+        @Bindable var vm = vm
+        return HStack {
             Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
-            TextField("Метро, адрес или район", text: Binding(
-                get: { vm.queryText },
-                set: { vm.queryText = $0 }
-            ))
+            TextField("Метро, адрес или район", text: $vm.queryText)
             .onSubmit { Task { await vm.search() } }
             .submitLabel(.search)
 
@@ -55,7 +54,8 @@ struct SearchView: View {
     }
 
     private func filterChips(vm: SearchViewModel) -> some View {
-        HStack {
+        @Bindable var vm = vm
+        return HStack {
             Button {
                 coordinator.showFilter()
             } label: {
@@ -85,6 +85,7 @@ struct SearchView: View {
 
     @ViewBuilder
     private func results(vm: SearchViewModel) -> some View {
+        @Bindable var vm = vm
         switch vm.state {
         case .idle, .loading:
             ProgressView().frame(maxWidth: .infinity, maxHeight: .infinity)
