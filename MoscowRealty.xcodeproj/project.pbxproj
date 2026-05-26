@@ -17,11 +17,14 @@
 		1824300BF78066D47A99B7B2 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE6763494D699490B0691C /* ChatDetailViewModel.swift */; };
 		1852EAEAD42CC0F2062E86F9 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8F372EB2C5A3F972E8F4D /* AppEnvironment.swift */; };
 		24F9FE8C5351D5B7FD134D4D /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB09DCFB50EF4F74B387EB /* ProfileCoordinator.swift */; };
+		28D9779872719B923D98B6A8 /* RegisterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7967FAF2D9106CCF46D18 /* RegisterViewModelTests.swift */; };
+		296D4B3971A1E070E5E6A06D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48FF99813385E9D9FA17A1 /* LoginViewModelTests.swift */; };
 		2A57A1AF7594D69983E5E970 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1DDCEBF85A592CCC422511 /* SearchView.swift */; };
 		2C5A94DAC2232C5CC311DEB2 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6B659F8A73BE46B711051 /* Property.swift */; };
 		2DC8DD222F3857F830B2F0E4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3627B4296BEB51241A97C99C /* ProfileView.swift */; };
 		2ED8911548AAD54D125B2092 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83FD5352C30E7F33408093 /* ChatListViewModel.swift */; };
 		31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */; };
+		34EE034C7AD910787401A0E7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698FEFE2B319CA66134A185 /* LoginViewModel.swift */; };
 		34EF74C0BF9D9255E91DD58A /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DBB627CBE997A68E1985E /* SearchViewModelTests.swift */; };
 		34F9A48F1AD7AEB014C085E3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28CC95D855CB543CEE87940 /* HomeView.swift */; };
 		3607B328040D34E5877F5D1A /* CatalogMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CCC1CBF9CACF87F0C6D5C /* CatalogMapView.swift */; };
@@ -37,6 +40,7 @@
 		6E2CD9273F5BF5272AD3FE01 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120F0FB65FD9D3CC4137B45C /* ChatListView.swift */; };
 		78DFBE35D3040BDF8214D665 /* FavoritesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EBF7EDA560849C7A17E7E /* FavoritesServiceProtocol.swift */; };
 		82172A2743F1CE73BFAC20E4 /* AuthModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226AAC88EEB5B368342107B /* AuthModelTests.swift */; };
+		8BF787496C640844393B89DD /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1A8676837BF43C0CBEBC0 /* RegisterViewModel.swift */; };
 		91FC62CE680E059932F37628 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950514DE5D72C35FA56604FA /* MockAuthService.swift */; };
 		9331E910485382A9E9B2CD0D /* ChatThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38D8BB5587283B706D9654 /* ChatThread.swift */; };
 		9925BD35550B79EDE56BC417 /* PropertyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D3EF97B44B3512EDB43C6 /* PropertyCard.swift */; };
@@ -84,8 +88,10 @@
 		13000A7ECD466970CBA6F9C2 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		19C1E76A70621800AF4EE6FF /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		1A8C711034127ABC12DAB229 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		1D48FF99813385E9D9FA17A1 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		20F598DE68E0A970C57CDA4E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		2490480CEEF4BEE502D704B9 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		2698FEFE2B319CA66134A185 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		27378C299FC6AEBF4CA94297 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		326A04E035C224546E82198E /* RegisterBuyerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBuyerView.swift; sourceTree = "<group>"; };
 		34CC799A5700365A2B6637EB /* PropertyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 		C28CC95D855CB543CEE87940 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C6EF2F30A0E8047D47925136 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		C9BB14D91B8EF479F74FBDB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CBA1A8676837BF43C0CBEBC0 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		CF1CCC1CBF9CACF87F0C6D5C /* CatalogMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogMapView.swift; sourceTree = "<group>"; };
 		D095FF79DA33653EEE6B0C6A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		D30520E70C83519C8C0A6742 /* SearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilter.swift; sourceTree = "<group>"; };
@@ -142,6 +149,7 @@
 		EC252E20EA0695459C3EBFC6 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		EDBD3A50569001D1544034CC /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
 		F43909E6C4C270004DCD44D0 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
+		F5C7967FAF2D9106CCF46D18 /* RegisterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -191,6 +199,7 @@
 			children = (
 				3218C92DC2095EF0B24804AB /* Model */,
 				63CA5E5CFDC1B893353F0E5B /* View */,
+				49DC5E765BF25712B615CA08 /* ViewModel */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -277,6 +286,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		49DC5E765BF25712B615CA08 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2698FEFE2B319CA66134A185 /* LoginViewModel.swift */,
+				CBA1A8676837BF43C0CBEBC0 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4E62BDF62F6235AD95957C8E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +348,8 @@
 			children = (
 				82D26C744D5927F213AE01B9 /* CatalogViewModelTests.swift */,
 				27378C299FC6AEBF4CA94297 /* HomeViewModelTests.swift */,
+				1D48FF99813385E9D9FA17A1 /* LoginViewModelTests.swift */,
+				F5C7967FAF2D9106CCF46D18 /* RegisterViewModelTests.swift */,
 				581DBB627CBE997A68E1985E /* SearchViewModelTests.swift */,
 			);
 			path = ViewModels;
@@ -654,6 +674,7 @@
 				34F9A48F1AD7AEB014C085E3 /* HomeView.swift in Sources */,
 				E9806FBA04839AAE8269D2F6 /* HomeViewModel.swift in Sources */,
 				46093E4FD0FAF5FBA9C5E079 /* LoginView.swift in Sources */,
+				34EE034C7AD910787401A0E7 /* LoginViewModel.swift in Sources */,
 				CB0724D86EC1A20AD2560DAB /* MainCoordinator.swift in Sources */,
 				F5CCB55956E63E3D0EAE4CAF /* MapSingleView.swift in Sources */,
 				91FC62CE680E059932F37628 /* MockAuthService.swift in Sources */,
@@ -672,6 +693,7 @@
 				04AF545E0D309BB70C2D7097 /* PropertyServiceProtocol.swift in Sources */,
 				F0E04B7A1E390CB21E2CE496 /* RegisterAgentView.swift in Sources */,
 				B5B9D813C548DA5B38820B01 /* RegisterBuyerView.swift in Sources */,
+				8BF787496C640844393B89DD /* RegisterViewModel.swift in Sources */,
 				C6831FFD38A10B6D40E8B7CF /* RootTabView.swift in Sources */,
 				F28D3C925CA144EA6B841F46 /* SearchCoordinator.swift in Sources */,
 				0F82FD6648D8B4AC9E926270 /* SearchFilter.swift in Sources */,
@@ -690,8 +712,10 @@
 				B565E64145BE73292C436A51 /* CatalogViewModelTests.swift in Sources */,
 				0A544E468A963DE705E329F4 /* FavoritesServiceTests.swift in Sources */,
 				0E696AD4DE5930FF854A3F6A /* HomeViewModelTests.swift in Sources */,
+				296D4B3971A1E070E5E6A06D /* LoginViewModelTests.swift in Sources */,
 				31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */,
 				9AB416E01FB7AD040C718755 /* PropertyModelTests.swift in Sources */,
+				28D9779872719B923D98B6A8 /* RegisterViewModelTests.swift in Sources */,
 				34EF74C0BF9D9255E91DD58A /* SearchViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
