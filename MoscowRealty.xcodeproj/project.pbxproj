@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */; };
+		44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFBA890F144695EC1D8BCFC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 769B84AFB12493A35F868405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D8C2A00176FF77E1320733;
+			remoteInfo = MoscowRealty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowRealtyApp.swift; sourceTree = "<group>"; };
+		97EB1FB720AD5C0681CF0C8A /* MoscowRealty.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoscowRealty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A755DC64BB56517834E38D /* MoscowRealtyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoscowRealtyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BB14D91B8EF479F74FBDB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowRealtyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		14E2AC31E63E4EE947140CAB /* MoscowRealty */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB14D91B8EF479F74FBDB1 /* Info.plist */,
+				D74A77E26E13A2FC8A9C5AC7 /* App */,
+			);
+			path = MoscowRealty;
+			sourceTree = "<group>";
+		};
+		69E2204D51B00564B6EEB6D7 /* MoscowRealtyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */,
+			);
+			path = MoscowRealtyTests;
+			sourceTree = "<group>";
+		};
+		C878DA6B012EC163BBEEF657 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97EB1FB720AD5C0681CF0C8A /* MoscowRealty.app */,
+				C1A755DC64BB56517834E38D /* MoscowRealtyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8A46EAF8D1B65C3FDC5C4A9 = {
+			isa = PBXGroup;
+			children = (
+				14E2AC31E63E4EE947140CAB /* MoscowRealty */,
+				69E2204D51B00564B6EEB6D7 /* MoscowRealtyTests */,
+				C878DA6B012EC163BBEEF657 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D74A77E26E13A2FC8A9C5AC7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		"TEMP_30F97007-8F64-4DE0-9EED-7437375918E2" /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		"TEMP_31B283E6-13BD-431D-A90E-C4C5410369DC" /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		"TEMP_3AF20F8E-AF64-433E-862A-E7279879AF68" /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		"TEMP_5D015ABB-804A-426B-80BE-30B55283DEBF" /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		"TEMP_682D0982-0700-4443-906A-2BDCB11B7715" /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		"TEMP_960E39DA-4D2A-41E0-B6EF-03A6869DAEAA" /* PropertyDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PropertyDetail;
+			sourceTree = "<group>";
+		};
+		"TEMP_BE15E53E-7C8B-44A0-804E-D32A7D40EC72" /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		"TEMP_CA719CC2-BDE9-44A8-A475-2AC9858D7F53" /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		"TEMP_DF13FAEC-99F9-4CAF-B2B5-5BE2026EAC87" /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Agent;
+			sourceTree = "<group>";
+		};
+		"TEMP_E05CA71D-B35B-47E8-AB9D-7854C5864FCC" /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		"TEMP_F5AFCCFD-2746-4612-AD19-18C19D6FCF9E" /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B5F7936D439525DB52D9D28 /* MoscowRealtyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA4C77519CFA22BB9FF6067 /* Build configuration list for PBXNativeTarget "MoscowRealtyTests" */;
+			buildPhases = (
+				C784131BF72CFE5575D30CDE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C4E6C56A770E970861B0D7C /* PBXTargetDependency */,
+			);
+			name = MoscowRealtyTests;
+			packageProductDependencies = (
+			);
+			productName = MoscowRealtyTests;
+			productReference = C1A755DC64BB56517834E38D /* MoscowRealtyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85D8C2A00176FF77E1320733 /* MoscowRealty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E894E9C921FEBB54F40436F7 /* Build configuration list for PBXNativeTarget "MoscowRealty" */;
+			buildPhases = (
+				78421884004DCECA8A16A9DC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoscowRealty;
+			packageProductDependencies = (
+			);
+			productName = MoscowRealty;
+			productReference = 97EB1FB720AD5C0681CF0C8A /* MoscowRealty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		769B84AFB12493A35F868405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 928179E69598B64B6BB468A7 /* Build configuration list for PBXProject "MoscowRealty" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C8A46EAF8D1B65C3FDC5C4A9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C878DA6B012EC163BBEEF657 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85D8C2A00176FF77E1320733 /* MoscowRealty */,
+				0B5F7936D439525DB52D9D28 /* MoscowRealtyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78421884004DCECA8A16A9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C784131BF72CFE5575D30CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C4E6C56A770E970861B0D7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D8C2A00176FF77E1320733 /* MoscowRealty */;
+			targetProxy = EFBA890F144695EC1D8BCFC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23D2520EDD3F5B8B5D0CADCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baha.moscowrealtyTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoscowRealty.app/MoscowRealty";
+			};
+			name = Debug;
+		};
+		35C61C5DD77631F9968F052E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MoscowRealty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baha.moscowrealty;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C35EA9579156724A0E4C9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MoscowRealty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baha.moscowrealty;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B635FCA86D8AE2727170F782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baha.moscowrealtyTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoscowRealty.app/MoscowRealty";
+			};
+			name = Release;
+		};
+		CBD923FFF0E5FA82A20E530A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		FBFC4A1B5C5E9E4DCD9BF342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		928179E69598B64B6BB468A7 /* Build configuration list for PBXProject "MoscowRealty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD923FFF0E5FA82A20E530A /* Debug */,
+				FBFC4A1B5C5E9E4DCD9BF342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAA4C77519CFA22BB9FF6067 /* Build configuration list for PBXNativeTarget "MoscowRealtyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D2520EDD3F5B8B5D0CADCA /* Debug */,
+				B635FCA86D8AE2727170F782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E894E9C921FEBB54F40436F7 /* Build configuration list for PBXNativeTarget "MoscowRealty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C61C5DD77631F9968F052E /* Debug */,
+				3C35EA9579156724A0E4C9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 769B84AFB12493A35F868405 /* Project object */;
+}
