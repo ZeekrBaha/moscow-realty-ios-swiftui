@@ -56,12 +56,16 @@ struct Property: Identifiable, Codable, Equatable, Hashable {
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
 
     var formattedPrice: String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.groupingSeparator = " "
-        let formatted = formatter.string(from: NSNumber(value: price)) ?? "\(price)"
+        let formatted = Property.priceFormatter.string(from: NSNumber(value: price)) ?? "\(price)"
         return listingType == .rent ? "\(formatted) ₽/мес" : "\(formatted) ₽"
     }
+
+    private static let priceFormatter: NumberFormatter = {
+        let f = NumberFormatter()
+        f.numberStyle = .decimal
+        f.groupingSeparator = " "
+        return f
+    }()
 
     var formattedArea: String { "\(Int(area)) м²" }
 }

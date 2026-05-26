@@ -29,6 +29,8 @@ final class PropertyModelTests: XCTestCase {
         XCTAssertEqual(property.listingType, .buy)
         XCTAssertEqual(property.rooms, 3)
         XCTAssertEqual(property.price, 15_000_000)
+        XCTAssertEqual(property.formattedPrice, "15 000 000 ₽")
+        XCTAssertEqual(property.formattedArea, "85 м²")
     }
 
     func test_propertyType_allCasesExist() {

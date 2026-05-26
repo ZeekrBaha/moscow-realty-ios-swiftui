@@ -1,4 +1,4 @@
-enum ViewState<T> {
+enum ViewState<T>: Equatable where T: Equatable {
     case idle
     case loading
     case loaded(T)
