@@ -21,7 +21,7 @@ final class PropertyDetailViewModel {
     }
 
     var specsRows: [(label: String, value: String)] {
-        var rows: [(String, String)] = []
+        var rows: [(label: String, value: String)] = []
         if let rooms = property.rooms    { rows.append(("Комнат", "\(rooms)")) }
         rows.append(("Площадь", property.formattedArea))
         if let floor = property.floor,
