@@ -41,6 +41,7 @@
 		99D313D07C4256CFD09BFF84 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490480CEEF4BEE502D704B9 /* FavoritesService.swift */; };
 		9AB416E01FB7AD040C718755 /* PropertyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC81185E1A91C62711AC4E9 /* PropertyModelTests.swift */; };
 		9D1DFF8265EB231957BC4620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C9EC6FF00EB8FD9C77E5A0 /* Assets.xcassets */; };
+		A307CE6E2E1E213C59ADB6B5 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3E36CF5F7F5A863AC5F02 /* FavoritesView.swift */; };
 		AA1C8489E12A86B182C27D7A /* PhotoGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562D339D007C862EF8EBD8C /* PhotoGalleryView.swift */; };
 		B048E0C6DFFA56AA29871E2F /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FA73009A684CCD0EC34EF /* ChatCoordinator.swift */; };
 		B2CA6416EC1EDFC36DB49B82 /* PropertyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CC799A5700365A2B6637EB /* PropertyDetailViewModel.swift */; };
@@ -48,6 +49,7 @@
 		B565E64145BE73292C436A51 /* CatalogViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D26C744D5927F213AE01B9 /* CatalogViewModelTests.swift */; };
 		B5B9D813C548DA5B38820B01 /* RegisterBuyerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A04E035C224546E82198E /* RegisterBuyerView.swift */; };
 		BA85D43222E1E11A1707D4EB /* MockPropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D137F4360BCEC9DB1F761 /* MockPropertyService.swift */; };
+		C102490CD98AA531B14C2090 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC252E20EA0695459C3EBFC6 /* FavoritesViewModel.swift */; };
 		C108A9E890B6926341928135 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EC40CCF7B903741F5261A /* AuthCoordinator.swift */; };
 		C2D28840AA2E5F79D7288F88 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C711034127ABC12DAB229 /* CatalogView.swift */; };
 		C6831FFD38A10B6D40E8B7CF /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BEE363E2ACAEFFACF7582 /* RootTabView.swift */; };
@@ -91,6 +93,7 @@
 		40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowRealtyApp.swift; sourceTree = "<group>"; };
 		440EC40CCF7B903741F5261A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		45C9EC6FF00EB8FD9C77E5A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47E3E36CF5F7F5A863AC5F02 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		4B857446C054E1771511151D /* MapSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSingleView.swift; sourceTree = "<group>"; };
 		513ED5DF4C25178AA3DEB4FA /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		5226AAC88EEB5B368342107B /* AuthModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModelTests.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		E07698B49EEB54EC343508A6 /* MockChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChatService.swift; sourceTree = "<group>"; };
 		E8F182B104996A550DB71CAA /* AuthFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowView.swift; sourceTree = "<group>"; };
 		E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowRealtyTests.swift; sourceTree = "<group>"; };
+		EC252E20EA0695459C3EBFC6 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		EDBD3A50569001D1544034CC /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
 		F43909E6C4C270004DCD44D0 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,12 +148,30 @@
 				0C0B7B9BE6E4ECE9B7784216 /* Auth */,
 				EAAB0D19D0D6E4AEA8AF949A /* Catalog */,
 				71C3F184EFA7F2AE82058FDC /* Chat */,
+				054F78329EA64F8F957C3AAE /* Favorites */,
 				0C24CBD230D5F7B6A1A6F057 /* Home */,
 				6FF23E037063557DC6C4E6A1 /* Profile */,
 				316AED744902F9BF540F20A9 /* PropertyDetail */,
 				FBAB14E4DD207313E47DFD7A /* Search */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		029ED235F61D046BC850C518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47E3E36CF5F7F5A863AC5F02 /* FavoritesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		054F78329EA64F8F957C3AAE /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				029ED235F61D046BC850C518 /* View */,
+				EE6C1F34E3F59D2F8C512DB9 /* ViewModel */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		080C490BF20DEC90435E11BC /* View */ = {
@@ -488,6 +510,14 @@
 			path = Catalog;
 			sourceTree = "<group>";
 		};
+		EE6C1F34E3F59D2F8C512DB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC252E20EA0695459C3EBFC6 /* FavoritesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FBAB14E4DD207313E47DFD7A /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,13 +526,6 @@
 				0C47295F93AEB38BD5D40BF7 /* ViewModel */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		"TEMP_7931C79C-94CD-4474-8D83-364B9A1225E2" /* Favorites */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -610,6 +633,8 @@
 				9331E910485382A9E9B2CD0D /* ChatThread.swift in Sources */,
 				99D313D07C4256CFD09BFF84 /* FavoritesService.swift in Sources */,
 				78DFBE35D3040BDF8214D665 /* FavoritesServiceProtocol.swift in Sources */,
+				A307CE6E2E1E213C59ADB6B5 /* FavoritesView.swift in Sources */,
+				C102490CD98AA531B14C2090 /* FavoritesViewModel.swift in Sources */,
 				34F9A48F1AD7AEB014C085E3 /* HomeView.swift in Sources */,
 				E9806FBA04839AAE8269D2F6 /* HomeViewModel.swift in Sources */,
 				46093E4FD0FAF5FBA9C5E079 /* LoginView.swift in Sources */,
