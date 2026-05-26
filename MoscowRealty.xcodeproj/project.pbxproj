@@ -11,6 +11,7 @@
 		04AF545E0D309BB70C2D7097 /* PropertyServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A956FB1625085F4EF514EC31 /* PropertyServiceProtocol.swift */; };
 		066C9E17981CCB1BC206CF85 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43909E6C4C270004DCD44D0 /* AuthServiceProtocol.swift */; };
 		0A544E468A963DE705E329F4 /* FavoritesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2B3876F72550A27C20D03 /* FavoritesServiceTests.swift */; };
+		0E696AD4DE5930FF854A3F6A /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27378C299FC6AEBF4CA94297 /* HomeViewModelTests.swift */; };
 		0F82FD6648D8B4AC9E926270 /* SearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30520E70C83519C8C0A6742 /* SearchFilter.swift */; };
 		1852EAEAD42CC0F2062E86F9 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8F372EB2C5A3F972E8F4D /* AppEnvironment.swift */; };
 		24F9FE8C5351D5B7FD134D4D /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB09DCFB50EF4F74B387EB /* ProfileCoordinator.swift */; };
@@ -33,6 +34,7 @@
 		82172A2743F1CE73BFAC20E4 /* AuthModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226AAC88EEB5B368342107B /* AuthModelTests.swift */; };
 		91FC62CE680E059932F37628 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950514DE5D72C35FA56604FA /* MockAuthService.swift */; };
 		9331E910485382A9E9B2CD0D /* ChatThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38D8BB5587283B706D9654 /* ChatThread.swift */; };
+		9925BD35550B79EDE56BC417 /* PropertyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D3EF97B44B3512EDB43C6 /* PropertyCard.swift */; };
 		99D313D07C4256CFD09BFF84 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490480CEEF4BEE502D704B9 /* FavoritesService.swift */; };
 		9AB416E01FB7AD040C718755 /* PropertyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC81185E1A91C62711AC4E9 /* PropertyModelTests.swift */; };
 		9D1DFF8265EB231957BC4620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C9EC6FF00EB8FD9C77E5A0 /* Assets.xcassets */; };
@@ -49,6 +51,7 @@
 		DEB81590EF63725AF6F9A6D7 /* PostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02AD3FA7E0AE827A992444 /* PostCoordinator.swift */; };
 		E0721AAACDD5D1A25C387ED1 /* ChatServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73646197CE12E2A4DCCA060E /* ChatServiceProtocol.swift */; };
 		E7DB8CDEA379427EA7D1BE86 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050BF7FC4D264BCAA02F4CEE /* AuthError.swift */; };
+		E9806FBA04839AAE8269D2F6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3BE8153DA3AAB50FE9CEEB /* HomeViewModel.swift */; };
 		F0E04B7A1E390CB21E2CE496 /* RegisterAgentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE2EF6E579FAB5E42C9B77 /* RegisterAgentView.swift */; };
 		F28D3C925CA144EA6B841F46 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1E76A70621800AF4EE6FF /* SearchCoordinator.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,7 @@
 		19C1E76A70621800AF4EE6FF /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		20F598DE68E0A970C57CDA4E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		2490480CEEF4BEE502D704B9 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		27378C299FC6AEBF4CA94297 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		326A04E035C224546E82198E /* RegisterBuyerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBuyerView.swift; sourceTree = "<group>"; };
 		3627B4296BEB51241A97C99C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		38A2B3876F72550A27C20D03 /* FavoritesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceTests.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		561A52110FD7985D03842D8F /* SearchFilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterSheet.swift; sourceTree = "<group>"; };
 		57EB09DCFB50EF4F74B387EB /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		5A02AD3FA7E0AE827A992444 /* PostCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCoordinator.swift; sourceTree = "<group>"; };
+		5B3BE8153DA3AAB50FE9CEEB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		5D5647CAB658AECABE6BBAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6B6BEE363E2ACAEFFACF7582 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		6CCE2EF6E579FAB5E42C9B77 /* RegisterAgentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAgentView.swift; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		950514DE5D72C35FA56604FA /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		97EB1FB720AD5C0681CF0C8A /* MoscowRealty.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoscowRealty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2D137F4360BCEC9DB1F761 /* MockPropertyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPropertyService.swift; sourceTree = "<group>"; };
+		A45D3EF97B44B3512EDB43C6 /* PropertyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCard.swift; sourceTree = "<group>"; };
 		A91FA73009A684CCD0EC34EF /* ChatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
 		A956FB1625085F4EF514EC31 /* PropertyServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyServiceProtocol.swift; sourceTree = "<group>"; };
 		B22C64F3A62CA30073429022 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				686ABB3127DEDF4D42F36754 /* View */,
+				48E7C40076790CDD8EBC9798 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -211,6 +218,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		48E7C40076790CDD8EBC9798 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B3BE8153DA3AAB50FE9CEEB /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4E62BDF62F6235AD95957C8E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +265,14 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		5E5791485BB325EE312DB6D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				27378C299FC6AEBF4CA94297 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		60D7A8E5938A90F1FAD0DD47 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				C28CC95D855CB543CEE87940 /* HomeView.swift */,
+				A45D3EF97B44B3512EDB43C6 /* PropertyCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +308,7 @@
 				E9A0A21D60D2CA1B66923D87 /* MoscowRealtyTests.swift */,
 				5B0D4B73B972188D0E6D5626 /* Models */,
 				E9A0FE26C6E50BF84E9E6AEA /* Services */,
+				5E5791485BB325EE312DB6D9 /* ViewModels */,
 			);
 			path = MoscowRealtyTests;
 			sourceTree = "<group>";
@@ -425,7 +450,7 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		"TEMP_20F60CE2-9213-4768-BFFD-55F2D5FBB95B" /* Favorites */ = {
+		"TEMP_3F48A25F-0270-442C-A6CE-F33585E431F5" /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -536,6 +561,7 @@
 				99D313D07C4256CFD09BFF84 /* FavoritesService.swift in Sources */,
 				78DFBE35D3040BDF8214D665 /* FavoritesServiceProtocol.swift in Sources */,
 				34F9A48F1AD7AEB014C085E3 /* HomeView.swift in Sources */,
+				E9806FBA04839AAE8269D2F6 /* HomeViewModel.swift in Sources */,
 				46093E4FD0FAF5FBA9C5E079 /* LoginView.swift in Sources */,
 				CB0724D86EC1A20AD2560DAB /* MainCoordinator.swift in Sources */,
 				91FC62CE680E059932F37628 /* MockAuthService.swift in Sources */,
@@ -547,6 +573,7 @@
 				24F9FE8C5351D5B7FD134D4D /* ProfileCoordinator.swift in Sources */,
 				2DC8DD222F3857F830B2F0E4 /* ProfileView.swift in Sources */,
 				2C5A94DAC2232C5CC311DEB2 /* Property.swift in Sources */,
+				9925BD35550B79EDE56BC417 /* PropertyCard.swift in Sources */,
 				CD303136D61153CF97FA82BB /* PropertyDetailView.swift in Sources */,
 				04AF545E0D309BB70C2D7097 /* PropertyServiceProtocol.swift in Sources */,
 				F0E04B7A1E390CB21E2CE496 /* RegisterAgentView.swift in Sources */,
@@ -566,6 +593,7 @@
 			files = (
 				82172A2743F1CE73BFAC20E4 /* AuthModelTests.swift in Sources */,
 				0A544E468A963DE705E329F4 /* FavoritesServiceTests.swift in Sources */,
+				0E696AD4DE5930FF854A3F6A /* HomeViewModelTests.swift in Sources */,
 				31FE15754CFC258020F0D3DB /* MoscowRealtyTests.swift in Sources */,
 				9AB416E01FB7AD040C718755 /* PropertyModelTests.swift in Sources */,
 			);
