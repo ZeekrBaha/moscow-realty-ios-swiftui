@@ -39,7 +39,9 @@
 		99D313D07C4256CFD09BFF84 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490480CEEF4BEE502D704B9 /* FavoritesService.swift */; };
 		9AB416E01FB7AD040C718755 /* PropertyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC81185E1A91C62711AC4E9 /* PropertyModelTests.swift */; };
 		9D1DFF8265EB231957BC4620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C9EC6FF00EB8FD9C77E5A0 /* Assets.xcassets */; };
+		AA1C8489E12A86B182C27D7A /* PhotoGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562D339D007C862EF8EBD8C /* PhotoGalleryView.swift */; };
 		B048E0C6DFFA56AA29871E2F /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FA73009A684CCD0EC34EF /* ChatCoordinator.swift */; };
+		B2CA6416EC1EDFC36DB49B82 /* PropertyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CC799A5700365A2B6637EB /* PropertyDetailViewModel.swift */; };
 		B4E774707F2B5332F64F2870 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72913BC93D7E9A76FAB11C76 /* AppCoordinator.swift */; };
 		B565E64145BE73292C436A51 /* CatalogViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D26C744D5927F213AE01B9 /* CatalogViewModelTests.swift */; };
 		B5B9D813C548DA5B38820B01 /* RegisterBuyerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A04E035C224546E82198E /* RegisterBuyerView.swift */; };
@@ -57,6 +59,7 @@
 		E9806FBA04839AAE8269D2F6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3BE8153DA3AAB50FE9CEEB /* HomeViewModel.swift */; };
 		F0E04B7A1E390CB21E2CE496 /* RegisterAgentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE2EF6E579FAB5E42C9B77 /* RegisterAgentView.swift */; };
 		F28D3C925CA144EA6B841F46 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C1E76A70621800AF4EE6FF /* SearchCoordinator.swift */; };
+		F5CCB55956E63E3D0EAE4CAF /* MapSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B857446C054E1771511151D /* MapSingleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,12 +82,14 @@
 		2490480CEEF4BEE502D704B9 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
 		27378C299FC6AEBF4CA94297 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		326A04E035C224546E82198E /* RegisterBuyerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBuyerView.swift; sourceTree = "<group>"; };
+		34CC799A5700365A2B6637EB /* PropertyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewModel.swift; sourceTree = "<group>"; };
 		3627B4296BEB51241A97C99C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		38A2B3876F72550A27C20D03 /* FavoritesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceTests.swift; sourceTree = "<group>"; };
 		3A38D8BB5587283B706D9654 /* ChatThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatThread.swift; sourceTree = "<group>"; };
 		40A1F9D97A02DBC87E15AF82 /* MoscowRealtyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowRealtyApp.swift; sourceTree = "<group>"; };
 		440EC40CCF7B903741F5261A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		45C9EC6FF00EB8FD9C77E5A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B857446C054E1771511151D /* MapSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSingleView.swift; sourceTree = "<group>"; };
 		513ED5DF4C25178AA3DEB4FA /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		5226AAC88EEB5B368342107B /* AuthModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModelTests.swift; sourceTree = "<group>"; };
 		55C5D238C4499372CCEB4640 /* PostAuthGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthGateView.swift; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 		91ADCCBD20AD27B50A34BA97 /* AddListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingView.swift; sourceTree = "<group>"; };
 		91D6B659F8A73BE46B711051 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		950514DE5D72C35FA56604FA /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		9562D339D007C862EF8EBD8C /* PhotoGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryView.swift; sourceTree = "<group>"; };
 		97EB1FB720AD5C0681CF0C8A /* MoscowRealty.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoscowRealty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2D137F4360BCEC9DB1F761 /* MockPropertyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPropertyService.swift; sourceTree = "<group>"; };
 		A45D3EF97B44B3512EDB43C6 /* PropertyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCard.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				8BC1CA1C369CA342D970C457 /* View */,
+				C6756F21E7BF3FE23C4AE816 /* ViewModel */,
 			);
 			path = PropertyDetail;
 			sourceTree = "<group>";
@@ -349,6 +356,8 @@
 		8BC1CA1C369CA342D970C457 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B857446C054E1771511151D /* MapSingleView.swift */,
+				9562D339D007C862EF8EBD8C /* PhotoGalleryView.swift */,
 				EDBD3A50569001D1544034CC /* PropertyDetailView.swift */,
 			);
 			path = View;
@@ -392,6 +401,14 @@
 				D8F8F372EB2C5A3F972E8F4D /* AppEnvironment.swift */,
 			);
 			path = Environment;
+			sourceTree = "<group>";
+		};
+		C6756F21E7BF3FE23C4AE816 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34CC799A5700365A2B6637EB /* PropertyDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C878DA6B012EC163BBEEF657 /* Products */ = {
@@ -467,7 +484,7 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		"TEMP_A1A4A4ED-4691-405C-B2C0-9A2DDA628BBB" /* Favorites */ = {
+		"TEMP_FDC0F591-4BCB-4A2E-8798-49BABEB2E4E3" /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -583,10 +600,12 @@
 				E9806FBA04839AAE8269D2F6 /* HomeViewModel.swift in Sources */,
 				46093E4FD0FAF5FBA9C5E079 /* LoginView.swift in Sources */,
 				CB0724D86EC1A20AD2560DAB /* MainCoordinator.swift in Sources */,
+				F5CCB55956E63E3D0EAE4CAF /* MapSingleView.swift in Sources */,
 				91FC62CE680E059932F37628 /* MockAuthService.swift in Sources */,
 				669B294A73DD5DEAB8FE5B62 /* MockChatService.swift in Sources */,
 				BA85D43222E1E11A1707D4EB /* MockPropertyService.swift in Sources */,
 				44E535D330F4CA3A609FD5D2 /* MoscowRealtyApp.swift in Sources */,
+				AA1C8489E12A86B182C27D7A /* PhotoGalleryView.swift in Sources */,
 				DD73FD9B525312FBBA728950 /* PostAuthGateView.swift in Sources */,
 				DEB81590EF63725AF6F9A6D7 /* PostCoordinator.swift in Sources */,
 				24F9FE8C5351D5B7FD134D4D /* ProfileCoordinator.swift in Sources */,
@@ -594,6 +613,7 @@
 				2C5A94DAC2232C5CC311DEB2 /* Property.swift in Sources */,
 				9925BD35550B79EDE56BC417 /* PropertyCard.swift in Sources */,
 				CD303136D61153CF97FA82BB /* PropertyDetailView.swift in Sources */,
+				B2CA6416EC1EDFC36DB49B82 /* PropertyDetailViewModel.swift in Sources */,
 				04AF545E0D309BB70C2D7097 /* PropertyServiceProtocol.swift in Sources */,
 				F0E04B7A1E390CB21E2CE496 /* RegisterAgentView.swift in Sources */,
 				B5B9D813C548DA5B38820B01 /* RegisterBuyerView.swift in Sources */,
