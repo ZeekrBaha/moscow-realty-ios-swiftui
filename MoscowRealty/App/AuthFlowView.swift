@@ -1,6 +1,9 @@
 import SwiftUI
+
 struct AuthFlowView: View {
+    @Environment(ProfileCoordinator.self) private var profileCoordinator
     @State private var coordinator = AuthCoordinator()
+
     var body: some View {
         NavigationStack(path: Bindable(coordinator).path) {
             LoginView()
@@ -12,5 +15,10 @@ struct AuthFlowView: View {
                 }
         }
         .environment(coordinator)
+        .onAppear {
+            coordinator.onSuccess = { _ in
+                profileCoordinator.isAuthPresented = false
+            }
+        }
     }
 }
