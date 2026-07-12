@@ -6,11 +6,11 @@ import Foundation
 final class FavoritesViewModel {
     var state: ViewState<[Property]> = .idle
 
-    private let propertyService:  any PropertyServiceProtocol
+    private let propertyService: any PropertyServiceProtocol
     private let favoritesService: any FavoritesServiceProtocol
 
     init(
-        propertyService:  any PropertyServiceProtocol  = MockPropertyService(),
+        propertyService: any PropertyServiceProtocol  = MockPropertyService(),
         favoritesService: any FavoritesServiceProtocol = FavoritesService()
     ) {
         self.propertyService  = propertyService

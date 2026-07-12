@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct AddListingView: View {
-    var existingProperty: Property? = nil
+    var existingProperty: Property?
     @Environment(PostCoordinator.self) private var postCoordinator
     @Environment(\.propertyService) private var propertyService
     @Environment(AppCoordinator.self) private var app
@@ -180,8 +180,7 @@ struct AddListingView: View {
                     Button {
                         Task { await vm.submit() }
                     } label: {
-                        if vm.isSubmitting { ProgressView().tint(.white) }
-                        else { Text("Разместить") }
+                        if vm.isSubmitting { ProgressView().tint(.white) } else { Text("Разместить") }
                     }
                     .buttonStyle(.borderedProminent)
                     .disabled(vm.isSubmitting)

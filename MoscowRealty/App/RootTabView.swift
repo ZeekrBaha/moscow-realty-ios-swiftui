@@ -12,11 +12,11 @@ struct RootTabView: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             mainTab
-                .tabItem { Label("Главная",    systemImage: "house") }
+                .tabItem { Label("Главная", systemImage: "house") }
                 .tag(0)
 
             searchTab
-                .tabItem { Label("Поиск",      systemImage: "magnifyingglass") }
+                .tabItem { Label("Поиск", systemImage: "magnifyingglass") }
                 .tag(1)
 
             postTab
@@ -24,11 +24,11 @@ struct RootTabView: View {
                 .tag(2)
 
             chatTab
-                .tabItem { Label("Чат",        systemImage: "message") }
+                .tabItem { Label("Чат", systemImage: "message") }
                 .tag(3)
 
             profileTab
-                .tabItem { Label("Профиль",    systemImage: "person") }
+                .tabItem { Label("Профиль", systemImage: "person") }
                 .tag(4)
         }
         .tint(.primary)

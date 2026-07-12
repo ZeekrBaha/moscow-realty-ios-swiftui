@@ -48,8 +48,7 @@ struct RegisterBuyerView: View {
                     Task { await vm.register() }
                 } label: {
                     Group {
-                        if vm.isLoading { ProgressView().tint(.white) }
-                        else { Text("Создать аккаунт") }
+                        if vm.isLoading { ProgressView().tint(.white) } else { Text("Создать аккаунт") }
                     }
                     .frame(maxWidth: .infinity)
                 }

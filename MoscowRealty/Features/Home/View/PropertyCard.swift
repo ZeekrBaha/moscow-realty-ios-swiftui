@@ -3,7 +3,7 @@ import SwiftUI
 struct PropertyCard: View {
     let property: Property
     var isFavorite: Bool = false
-    var onFavoriteTap: (() -> Void)? = nil
+    var onFavoriteTap: (() -> Void)?
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {

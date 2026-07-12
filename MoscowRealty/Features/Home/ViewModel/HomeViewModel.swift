@@ -7,9 +7,9 @@ final class HomeViewModel {
     var featuredState: ViewState<[Property]> = .idle
     var selectedPropertyType: PropertyType = .apartment
     var selectedListingType: ListingType = .buy
-    var selectedRooms: Int? = nil
-    var priceMin: Int? = nil
-    var priceMax: Int? = nil
+    var selectedRooms: Int?
+    var priceMin: Int?
+    var priceMax: Int?
     var metroQuery: String = ""
 
     var roomsLabel: String {

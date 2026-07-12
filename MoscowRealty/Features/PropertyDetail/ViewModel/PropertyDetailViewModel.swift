@@ -22,13 +22,13 @@ final class PropertyDetailViewModel {
 
     var specsRows: [(label: String, value: String)] {
         var rows: [(label: String, value: String)] = []
-        if let rooms = property.rooms    { rows.append(("Комнат", "\(rooms)")) }
+        if let rooms = property.rooms { rows.append(("Комнат", "\(rooms)")) }
         rows.append(("Площадь", property.formattedArea))
         if let floor = property.floor,
            let total = property.totalFloors { rows.append(("Этаж", "\(floor) из \(total)")) }
-        if property.isNewBuilding            { rows.append(("Тип", "Новостройка")) }
-        if let heated = property.isHeated   { rows.append(("Отопление", heated ? "Есть" : "Нет")) }
-        if let metro = property.metro        { rows.append(("Метро", metro)) }
+        if property.isNewBuilding { rows.append(("Тип", "Новостройка")) }
+        if let heated = property.isHeated { rows.append(("Отопление", heated ? "Есть" : "Нет")) }
+        if let metro = property.metro { rows.append(("Метро", metro)) }
         rows.append(("Район", property.district))
         return rows
     }

@@ -12,8 +12,8 @@ final class RegisterViewModel {
     var licenseNumber: String = ""
     var role: UserRole = .buyer
     var isLoading: Bool = false
-    var errorMessage: String? = nil
-    var registeredUser: AppUser? = nil
+    var errorMessage: String?
+    var registeredUser: AppUser?
 
     private let authService: any AuthServiceProtocol
 

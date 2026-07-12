@@ -21,7 +21,7 @@ final class AddListingViewModel {
     var selectedImageNames: [String] = []
     var isSubmitting: Bool = false
     var isSubmitted: Bool = false
-    var errorMessage: String? = nil
+    var errorMessage: String?
 
     let availableImages = [
         "apt_arbat_1", "apt_arbat_2", "apt_south_1", "apt_south_2",

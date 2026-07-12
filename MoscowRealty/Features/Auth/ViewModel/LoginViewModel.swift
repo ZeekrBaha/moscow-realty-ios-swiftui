@@ -7,8 +7,8 @@ final class LoginViewModel {
     var email: String = ""
     var password: String = ""
     var isLoading: Bool = false
-    var errorMessage: String? = nil
-    var loggedInUser: AppUser? = nil
+    var errorMessage: String?
+    var loggedInUser: AppUser?
 
     private let authService: any AuthServiceProtocol
 

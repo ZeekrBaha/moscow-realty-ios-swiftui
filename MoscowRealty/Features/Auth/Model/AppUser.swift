@@ -6,12 +6,12 @@ enum UserRole: String, Codable, Equatable {
 }
 
 struct AppUser: Identifiable, Codable, Equatable {
-    let id:            UUID
-    var name:          String
-    var email:         String
-    var phone:         String?
-    var role:          UserRole
-    var agency:        String?
+    let id: UUID
+    var name: String
+    var email: String
+    var phone: String?
+    var role: UserRole
+    var agency: String?
     var licenseNumber: String?
 
     var isAgent: Bool { role == .agent }

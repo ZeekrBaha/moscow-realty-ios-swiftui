@@ -27,31 +27,31 @@ enum ListingType: String, CaseIterable, Codable {
 }
 
 struct Coordinates: Codable, Equatable, Hashable {
-    let latitude:  Double
+    let latitude: Double
     let longitude: Double
 }
 
 struct Property: Identifiable, Codable, Equatable, Hashable {
-    let id:           UUID
+    let id: UUID
     var propertyType: PropertyType
-    var listingType:  ListingType
-    var title:        String
-    var price:        Int
-    var address:      String
-    var metro:        String?
-    var district:     String
-    var area:         Double
-    var imageNames:   [String]
-    var coordinates:  Coordinates
-    var agentId:      UUID
-    var description:  String
+    var listingType: ListingType
+    var title: String
+    var price: Int
+    var address: String
+    var metro: String?
+    var district: String
+    var area: Double
+    var imageNames: [String]
+    var coordinates: Coordinates
+    var agentId: UUID
+    var description: String
     // Apartment-only
-    var rooms:        Int?
-    var floor:        Int?
-    var totalFloors:  Int?
+    var rooms: Int?
+    var floor: Int?
+    var totalFloors: Int?
     var isNewBuilding: Bool
     // Parking & Storage
-    var isHeated:     Bool?
+    var isHeated: Bool?
 
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
 

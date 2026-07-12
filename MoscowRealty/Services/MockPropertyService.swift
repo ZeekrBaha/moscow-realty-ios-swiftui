@@ -39,8 +39,8 @@ final class MockPropertyService: PropertyServiceProtocol {
         }
         if let min = filter.priceMin { guard property.price >= min else { return false } }
         if let max = filter.priceMax { guard property.price <= max else { return false } }
-        if let min = filter.areaMin  { guard property.area  >= min else { return false } }
-        if let max = filter.areaMax  { guard property.area  <= max else { return false } }
+        if let min = filter.areaMin { guard property.area  >= min else { return false } }
+        if let max = filter.areaMax { guard property.area  <= max else { return false } }
         if let metro = filter.metro, !metro.isEmpty {
             guard property.metro?.localizedCaseInsensitiveContains(metro) == true else { return false }
         }

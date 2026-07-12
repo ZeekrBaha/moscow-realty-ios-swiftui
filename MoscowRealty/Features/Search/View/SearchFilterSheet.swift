@@ -34,15 +34,18 @@ struct SearchFilterSheet: View {
 
                 Section("Комнатность") {
                     HStack {
-                        ForEach([1, 2, 3, 4], id: \.self) { n in
+                        ForEach([1, 2, 3, 4], id: \.self) { roomCount in
                             Toggle(isOn: Binding(
-                                get: { localFilter.rooms.contains(n) },
-                                set: { on in
-                                    if on { localFilter.rooms.insert(n) }
-                                    else  { localFilter.rooms.remove(n) }
+                                get: { localFilter.rooms.contains(roomCount) },
+                                set: { isSelected in
+                                    if isSelected {
+                                        localFilter.rooms.insert(roomCount)
+                                    } else {
+                                        localFilter.rooms.remove(roomCount)
+                                    }
                                 }
                             )) {
-                                Text(n < 4 ? "\(n)-комн." : "4+")
+                                Text(roomCount < 4 ? "\(roomCount)-комн." : "4+")
                                     .font(.subheadline)
                             }
                             .toggleStyle(.button)

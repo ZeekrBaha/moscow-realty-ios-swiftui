@@ -49,8 +49,7 @@ struct RegisterAgentView: View {
                     Task { await vm.register() }
                 } label: {
                     Group {
-                        if vm.isLoading { ProgressView().tint(.white) }
-                        else { Text("Зарегистрироваться как агент") }
+                        if vm.isLoading { ProgressView().tint(.white) } else { Text("Зарегистрироваться как агент") }
                     }
                     .frame(maxWidth: .infinity)
                 }
