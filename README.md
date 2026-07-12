@@ -212,4 +212,17 @@ xcodebuild test \
   2>&1 | grep -E "(Test Suite|passed|failed|error)"
 ```
 
-All tests pass (models, services, view models).
+34/34 tests pass (models, services, view models) — verified on a real simulator, and enforced in CI (`.github/workflows/ci.yml`: `xcodegen generate` → `swiftlint` → `xcodebuild test`, regenerating the project from `project.yml` fresh on every run rather than trusting the committed `.xcodeproj`).
+
+```bash
+swiftlint lint MoscowRealty   # .swiftlint.yml tuned to this codebase's conventions
+```
+
+---
+
+## Limitations / Next Steps
+
+- **Mock services only — no backend.** `AuthServiceProtocol`, `PropertyServiceProtocol`, `ChatServiceProtocol`, `FavoritesServiceProtocol` all resolve to in-memory mock implementations (`Core/Environment/AppEnvironment.swift`). There is no networking layer (`URLSession`/Alamofire) anywhere in the app. "Works" here means compiles + passes unit tests, not "integrates with a real API" — that's the natural next seam to fill in, since the protocol boundary already exists for it.
+- **Seed credentials are plaintext, by design, for a mock-only app.** `MockAuthService.swift` compares passwords in-memory against a hardcoded seed (`buyer@test.ru` / `password`, documented above). This must never survive a real backend integration — it's fine only because there's no real account behind it.
+- **No UI test target.** All 34 tests are unit-level (models/services/view models); the 20 README screenshots above were captured manually and will silently drift from the real UI over time. A thin `MoscowRealtyUITests` target with a screenshot-capture test would keep them honest.
+- **No image caching/loading pipeline.** Property photos are bundled asset-catalog images (`imageNames` on `Property`), not fetched — fine for a mock catalog, would need `AsyncImage` or a caching library once real photo URLs exist.
