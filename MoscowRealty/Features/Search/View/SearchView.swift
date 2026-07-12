@@ -22,11 +22,17 @@ struct SearchView: View {
     }
 
     private func content(vm: SearchViewModel) -> some View {
-        @Bindable var vm = vm
+        @Bindable var coord = coordinator
         return VStack(spacing: 0) {
             searchBar(vm: vm)
             filterChips(vm: vm)
             results(vm: vm)
+        }
+        .sheet(isPresented: $coord.isFilterSheetPresented) {
+            SearchFilterSheet(initialFilter: vm.filter) { newFilter in
+                vm.filter = newFilter
+                Task { await vm.search() }
+            }
         }
     }
 

@@ -65,10 +65,6 @@ struct RootTabView: View {
                         PropertyDetailView(property: property)
                     }
                 }
-                .sheet(isPresented: Bindable(searchCoordinator).isFilterSheetPresented) {
-                    SearchFilterSheet()
-                        .environment(searchCoordinator)
-                }
         }
         .environment(searchCoordinator)
     }

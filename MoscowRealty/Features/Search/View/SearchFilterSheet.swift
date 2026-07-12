@@ -2,9 +2,14 @@ import SwiftUI
 
 struct SearchFilterSheet: View {
     @Environment(\.dismiss) private var dismiss
-    @State private var localFilter = SearchFilter()
+    @State private var localFilter: SearchFilter
 
     var onApply: ((SearchFilter) -> Void)?
+
+    init(initialFilter: SearchFilter = SearchFilter(), onApply: ((SearchFilter) -> Void)? = nil) {
+        self._localFilter = State(initialValue: initialFilter)
+        self.onApply = onApply
+    }
 
     var body: some View {
         NavigationStack {
